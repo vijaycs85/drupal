@@ -119,6 +119,6 @@
     "build": "drush -vvv si standard --db-url=mysql://root:root@127.0.0.1/drupal",
     "phpcs": "phpcs --standard=phpcs.xml --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer -p --",
     "phpcbf": "phpcbf --standard=phpcs.xml --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer -p --",
-    "phpunit": "export SIMPLETEST_BASE_URL=http://d8; ./vendor/phpunit/phpunit/phpunit -c ./web/core/phpunit.xml.dist --verbose ./web/core/modules/color/"
+    "phpunit": "export SIMPLETEST_BASE_URL=http://d8; ./vendor/phpunit/phpunit/phpunit -c ./web/core/phpunit.xml.dist --verbose "
   }
 }
