@@ -6,12 +6,11 @@ on:
 
 jobs:
   quality-checks:
-
     runs-on: ${{ matrix.operating-system }}
-      strategy:
-        matrix:
-          operating-system: [ ubuntu-latest ]
-          php: [ '7.4' ]
+    strategy:
+      matrix:
+        operating-system: [ ubuntu-latest ]
+        php: [ '7.4' ]
     name: PHP ${{ matrix.php }} sample
     steps:
     - uses: actions/checkout@v2
